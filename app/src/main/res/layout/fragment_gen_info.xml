@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:rowCount="1"
+    android:columnCount="3"
+    android:clickable="true"
+    android:id="@+id/genScroll">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genInfoTableView"
+            android:paddingStart="25dp">
+
+            <TableRow android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <Button
+                    android:id="@+id/newSiteButton"
+                    android:text="Add New Site"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="1"/>
+            </TableRow>
+
+            <TableRow android:layout_width="fill_parent">
+                <TextView
+                    android:text="Date of Investigation: "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/outputDateView"
+                    android:inputType="date"
+                    android:width="300dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Field Investigators 1: "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/outputFOI1"
+                    android:inputType="textPersonName"
+                    android:width="200dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Field Investigators 2: "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/outputFOI2"
+                    android:inputType="textPersonName"
+                    android:width="200dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Engineering District: "
+                    android:textSize="20sp" />
+
+                <Spinner android:id="@+id/districtSpinner"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selectedDistrictView" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="County: "
+                    android:textSize="20sp" />
+
+                <Spinner android:id="@+id/countySpinner"></Spinner>
+
+                <TextView
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/countyID" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Municipality: "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/municipalityName"
+                    android:inputType="textPersonName"
+                    android:width="200dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Site ID"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/siteID" />
+            </TableRow>
+
+
+            <TableRow>
+                <RelativeLayout
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+
+                    <Button
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/getLocationButton"
+                        android:text="Get Current Location"
+                        android:layout_centerInParent="true">
+
+
+                    </Button>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Site Coordinates: "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/siteCoords"
+                    android:textSize="20dp" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/markerRequest"/>
+<TextView android:id="@+id/markerID"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/genInfoTableView">
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                class="com.josh.cs_4401app.WorkaroundMapFragment" />
+
+            <ImageView
+                android:id="@+id/transparent_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/transparent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

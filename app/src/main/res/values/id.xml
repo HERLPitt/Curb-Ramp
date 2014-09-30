@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rampDimA" type="id"/>
+    <item name="rampDimB" type="id"/>
+    <item name="rampDimC" type="id"/>
+    <item name="rampDimD" type="id"/>
+    <item name="rampDimE" type="id"/>
+    <item name="rampDimF" type="id"/>
+    <item name="rampDimG" type="id"/>
+    <item name="rampDimH" type="id"/>
+    <item name="rampDimI" type="id"/>
+    <item name="rampDimJ" type="id"/>
+    <item name="rampDimK" type="id"/>
+    <item name="rampDimL" type="id"/>
+    <item name="rampDimM" type="id"/>
+    <item name="rampDimN" type="id"/>
+    <item name="rampDimO" type="id"/>
+    <item name="rampDimP" type="id"/>
+    <item name="rampDimQ" type="id"/>
+    <item name="rampDimR" type="id"/>
+    <item name="rampDimS" type="id"/>
+    <item name="rampDimT" type="id"/>
+    <item name="rampDimU" type="id"/>
+    <item name="rampDimV" type="id"/>
+    <item name="rampDimW" type="id"/>
+    <item name="rampDimX" type="id"/>
+    <item name="rampDimY" type="id"/>
+    <item name="rampDimZ" type="id"/>
+    <item name="rampDimAA" type="id"/>
+    <item name="rampDimBB" type="id"/>
+    <item name="rampDimCC" type="id"/>
+    <item name="rampDimYY" type="id"/>
+    <item name="rampDimZZ" type="id"/>
+    <item name="doiOutputView" type="id"/>
+
+
+    </resources>
+
+
+

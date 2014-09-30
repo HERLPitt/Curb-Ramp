@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/masterScroll">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rampImageView"
+                android:src="@drawable/oneramponecross"
+                android:layout_gravity="center"
+                android:contentDescription="view window for ramp image"
+                android:scaleType="centerCrop" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectRampType"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="200dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:focusableInTouchMode="true">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/dimTableScroll"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dimTable"
+                    android:focusableInTouchMode="true"></TableLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingTop="50dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calibrate Sensor"
+                    android:id="@+id/sensorCalibrate"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/outputGrade"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear All Fields"
+                    android:id="@+id/clearFields"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Measurement"
+                    android:id="@+id/startMeasurement"
+                    android:layout_marginBottom="30dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save Measurement"
+                    android:id="@+id/saveMeasurement" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

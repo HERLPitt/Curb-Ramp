@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CS-4401 App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_section1">General Info</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_construction_info">ConstructionInfo</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <string-array name="nav_drawer_items">
+        <item>General Info</item>
+        <item>Construction Info</item>
+        <item>Ramp Type</item>
+        <item>Push Button</item>
+        <item>Site Pictures</item>
+        <item>Save Data</item>
+    </string-array>
+    <string-array name="constructionPhases">
+        <item>Constructed</item>
+        <item>Ex-Surveyed</item>
+        <item>Missing</item>
+    </string-array>
+    <string-array name="rampCrossOptions">
+        <item>State Route</item>
+        <item>Local Route</item>
+        <item>Both</item>
+    </string-array>
+    <string-array name="rampSurfaceOptions">
+        <item>Brick</item>
+        <item>Concrete</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="typeDWS">
+        <item>Mat</item>
+        <item>PolConc</item>
+        <item>PolCom</item>
+        <item>Iron</item>
+        <item>Steel</item>
+        <item>Brick</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="rampTypes">
+        <item>1 Ramp, 1 Crossing</item>
+        <item>1 Ramp, 2 Crossings</item>
+        <item>Accessible Push Buttons</item>
+        <item>Type 1</item>
+        <item>Type 1a</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+        <item>Type 4a</item>
+        <item>Type 5</item>
+        <item>Type 6</item>
+        <item>Blended Transition</item>
+        <item>Median Type A</item>
+        <item>Median Type B</item>
+        <item>Non-typical</item>
+    </string-array>
+    <string-array name="districtNames">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="district1">
+        <item>Crawford</item>
+        <item>Erie</item>
+        <item>Forest</item>
+        <item>Mercer</item>
+        <item>Venango</item>
+        <item>Warren</item>
+    </string-array>
+    <string-array name="district2">
+        <item>Cameron</item>
+        <item>Centre</item>
+        <item>Clearfield</item>
+        <item>Clinton</item>
+        <item>Elk</item>
+        <item>Juniata</item>
+        <item>McKean</item>
+        <item>Mifflin</item>
+        <item>Potter</item>
+    </string-array>
+    <string-array name="district3">
+        <item>Bradford</item>
+        <item>Columbia</item>
+        <item>Lycoming</item>
+        <item>Montour</item>
+        <item>Northumberland</item>
+        <item>Snyder</item>
+        <item>Sullivan</item>
+        <item>Tioga</item>
+        <item>Union</item>
+    </string-array>
+    <string-array name="district4">
+        <item>Lackawanna</item>
+        <item>Luzerne</item>
+        <item>Pike</item>
+        <item>Susquehanna</item>
+        <item>Wayne</item>
+        <item>Wyoming</item>
+    </string-array>
+    <string-array name="district5">
+        <item>Berks</item>
+        <item>Carbon</item>
+        <item>Lehigh</item>
+        <item>Monroe</item>
+        <item>Northampton</item>
+        <item>Northumberland</item>
+        <item>Schuylkill</item>
+    </string-array>
+    <string-array name="district6">
+        <item>Bucks</item>
+        <item>Chester</item>
+        <item>Delaware</item>
+        <item>Montgomery</item>
+        <item>City and County of Philadelphia</item>
+    </string-array>
+    <string-array name="district8">
+        <item>Adams</item>
+        <item>Cumberland</item>
+        <item>Dauphin</item>
+        <item>Franklin</item>
+        <item>Lancaster</item>
+        <item>Lebanon</item>
+        <item>Perry</item>
+        <item>York</item>
+    </string-array>
+    <string-array name="district9">
+        <item>Bedford</item>
+        <item>Blair</item>
+        <item>Cambria</item>
+        <item>Fulton</item>
+        <item>Huntingdon</item>
+        <item>Somerset</item>
+    </string-array>
+    <string-array name="district10">
+        <item>Armstrong</item>
+        <item>Butler</item>
+        <item>Clarion</item>
+        <item>Indiana</item>
+        <item>Jefferson</item>
+    </string-array>
+    <string-array name="district11">
+        <item>Allegheny</item>
+        <item>Beaver</item>
+        <item>Lawrence</item>
+    </string-array>
+    <string-array name="district12">
+        <item>Fayette</item>
+        <item>Greene</item>
+        <item>Washington</item>
+        <item>Westmoreland</item>
+    </string-array>
+    <string-array name="oneramponecross">
+        <item>YY</item>
+        <item>ZZ</item>
+    </string-array>
+    <string-array name="oneramptwocross">
+        <item>AA</item>
+        <item>BB</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>YY</item>
+        <item>ZZ</item>
+    </string-array>
+    <string-array name="blendedtransition">
+        <item>A</item>
+        <item>D</item>
+        <item>F</item>
+        <item>G</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>M</item>
+        <item>N</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>V</item>
+    </string-array>
+    <string-array name="typeAmedian">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="typeBmedian">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>K</item>
+        <item>L</item>
+        <item>N</item>
+        <item>O</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="nontypical">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>I</item>
+        <item>J</item>
+        <item>M</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type1">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type1a">
+        <item>A</item>
+        <item>C</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>O</item>
+        <item>Q</item>
+        <item>U</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type2">
+        <item>A</item>
+        <item>B</item>
+        <item>D</item>
+        <item>F</item>
+        <item>G</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>U</item>
+        <item>V</item>
+    </string-array>
+    <string-array name="type3">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="type4">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>J</item>
+        <item>K</item>
+        <item>M</item>
+        <item>N</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type4a">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type5">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="type6">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+        <item>G</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>V</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="pushbuttons">
+
+    </string-array>
+
+    <string-array name="siteIDList">
+
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

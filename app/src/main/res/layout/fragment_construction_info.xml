@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:clickable="true"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Construction Phase: "
+            android:id="@+id/constructionPhaseView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:paddingTop="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/outputConstructionPhase"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Ramp Crosses: "
+            android:id="@+id/rampCrossesView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/constructionPhaseView"
+            android:textAlignment="center"
+            android:paddingTop="16dp"
+            android:layout_alignBottom="@+id/outputRampCrosses"
+            android:layout_alignTop="@+id/outputRampCrosses" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputConstructionPhase"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/constructionPhaseView"
+            android:paddingTop="16dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputRampCrosses"
+            android:layout_toEndOf="@+id/rampCrossesView"
+            android:layout_below="@+id/constructionPhaseView"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Surface Stable? "
+            android:id="@+id/surfaceStableView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:paddingTop="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/outputRampCrosses"
+            android:layout_below="@+id/rampCrossesView" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputSurfaceStable"
+            android:layout_toEndOf="@+id/surfaceStableView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:text=""
+            android:layout_alignBottom="@+id/surfaceStableView"
+            android:layout_below="@+id/rampCrossesView"
+
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Elevation Differences > 1/4"'
+            android:id="@+id/elevationDifferenceView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:paddingTop="0dp"
+            android:layout_toStartOf="@+id/outputRampCrosses"
+            android:layout_below="@+id/surfaceStableView"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputElevationDifference"
+            android:layout_toEndOf="@+id/elevationDifferenceView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:text=""
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp"
+            android:layout_alignBottom="@+id/elevationDifferenceView"
+            android:layout_alignTop="@+id/elevationDifferenceView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Grate Openings or Gaps > 1/2"'
+            android:id="@+id/grateOpeningsView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_toStartOf="@+id/outputRampCrosses"
+            android:layout_below="@+id/elevationDifferenceView"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputGrateOpenings"
+            android:layout_toEndOf="@+id/grateOpeningsView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp"
+            android:layout_alignBottom="@+id/grateOpeningsView"
+            android:layout_below="@+id/elevationDifferenceView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilities in Path of Travel"
+            android:id="@+id/utilitiesInPathView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/grateOpeningsView"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/outputUtilitiesInPath"
+            android:paddingBottom="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputUtilitiesInPath"
+            android:layout_toEndOf="@+id/grateOpeningsView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp"
+            android:layout_alignBottom="@+id/utilitiesInPathView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/grateOpeningsView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Ponding in Path of Travel"
+            android:id="@+id/waterPondingInPathView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_toStartOf="@+id/outputUtilitiesInPath"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/utilitiesInPathView"
+            android:layout_alignParentStart="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputWaterPondingInPath"
+            android:layout_toEndOf="@+id/utilitiesInPathView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/utilitiesInPathView"
+            android:layout_alignBottom="@+id/waterPondingInPathView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detectable Warning Surface (DWS)"
+            android:id="@+id/dwsView"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_toStartOf="@+id/outputUtilitiesInPath"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/waterPondingInPathView"
+            android:layout_alignStart="@+id/waterPondingInPathView" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputDWS"
+            android:layout_toEndOf="@+id/waterPondingInPathView"
+            android:checked="false"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:enabled="true"
+            android:clickable="true"
+            android:paddingStart="10dp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/waterPondingInPathView"
+            android:layout_alignBottom="@+id/dwsView" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputDWSType"
+            android:layout_toEndOf="@+id/outputDWS"
+            android:layout_below="@+id/outputWaterPondingInPath"
+            android:paddingTop="16dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
